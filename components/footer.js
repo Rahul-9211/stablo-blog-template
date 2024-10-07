@@ -20,17 +20,17 @@ export default function Footer(props) {
            // It helps us to grow & continue our work. Thank you.
           // OR Purchase PRO version for commercial license.  */}
           <a
-            href="https://web3templates.com/?ref=stablo-template"
+            href="https://github.com/Rahul-9211"
             rel="noopener"
             target="_blank">
-            Web3Templates
+            FastVideoSave
           </a>
         </span>
         <span>&middot;</span>
         <span>
           {" "}
           <a
-            href="https://github.com/web3templates/stablo"
+            href="https://github.com/Rahul-9211"
             rel="noopener"
             target="_blank">
             Github
@@ -40,22 +40,23 @@ export default function Footer(props) {
       <div className="mt-2 flex items-center justify-between">
         <div className="mt-5">
           <a
-            href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
+            href="https://fastVideoSave.com"
             target="_blank"
             rel="noopener"
             className="relative block w-44">
-            <Image
+            {/* <Image
               src={VercelLogo}
               alt="Powered by Vercel"
               unoptimized={true}
               width="150"
               height="25"
-            />
+            /> */}
+            FastVideoSave
           </a>
         </div>
         <ThemeSwitch />
       </div>
-      <Backlink />
+      {/* <Backlink /> */}
     </Container>
   );
 }
@@ -63,7 +64,7 @@ export default function Footer(props) {
 const Backlink = () => {
   return (
     <a
-      href="https://web3templates.com/templates/stablo-minimal-blog-website-template"
+      href="https://fastVideoSave.com/post/ultimate-guide-how-to-sell-on-instagram-without-a-website"
       target="_blank"
       rel="noopener"
       className="dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300 fixed bottom-5 right-5 flex place-items-center space-x-2 rounded border border-gray-300 bg-white px-3 py-1 font-sans text-sm font-semibold text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100">
@@ -86,7 +87,7 @@ const Backlink = () => {
         />
       </svg>
 
-      <span> Purchase Pro ↗</span>
+      {/* <span> Purchase Pro ↗</span> */}
     </a>
   );
 };
