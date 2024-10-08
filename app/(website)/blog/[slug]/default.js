@@ -28,6 +28,10 @@ export default function Post(props) {
 
   return (
     <>
+     <head>
+        <title>{post.metaTitle}</title>
+        <meta name="description" content={post.metaDesc} />
+      </head>
       <Container className="!pt-0">
         <div className="mx-auto max-w-screen-md ">
           <div className="flex justify-center">
