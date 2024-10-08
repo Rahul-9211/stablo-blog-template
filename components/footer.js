@@ -64,7 +64,7 @@ export default function Footer(props) {
 const Backlink = () => {
   return (
     <a
-      href="https://fastVideoSave.com/post/ultimate-guide-how-to-sell-on-instagram-without-a-website"
+      href="https://fastVideoSave.com/blog/ultimate-guide-how-to-sell-on-instagram-without-a-website"
       target="_blank"
       rel="noopener"
       className="dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300 fixed bottom-5 right-5 flex place-items-center space-x-2 rounded border border-gray-300 bg-white px-3 py-1 font-sans text-sm font-semibold text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100">

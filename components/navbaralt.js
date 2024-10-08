@@ -51,19 +51,19 @@ export default function NavbarAlt(props) {
         { title: "Archive - Pagination", path: "/archive" },
         {
           title: "Single Post - Default",
-          path: "/post/10-simple-practices-that-will-help-you-get-1-better-every-day"
+          path: "/blog/10-simple-practices-that-will-help-you-get-1-better-every-day"
         },
         {
           title: "Single Post - Minimal",
-          path: "/post/minimal/architectural-engineering-wonders-of-the-modern-era-for-your-inspiration"
+          path: "/blog/minimal/architectural-engineering-wonders-of-the-modern-era-for-your-inspiration"
         },
         {
           title: "Single Post - Lifestyle",
-          path: "/post/lifestyle/there-s-nothing-new-about-undermining-women-s-autonomy"
+          path: "/blog/lifestyle/there-s-nothing-new-about-undermining-women-s-autonomy"
         },
         {
           title: "Single Post - Sidebar",
-          path: "/post/sidebar/lessons-of-happiness-i-learned-from-a-mountain-village"
+          path: "/blog/sidebar/lessons-of-happiness-i-learned-from-a-mountain-village"
         }
       ]
     },
