@@ -9,17 +9,17 @@ async function sharedMetaData(params) {
   return {
     // enable this for resolving opengraph image
     // metadataBase: new URL(settings.url),
-    title: {
-      default:
-        settings?.title ||
-        "FastVideoSave - Blog Template for Next.js & Sanity CMS",
-      template: "%s | FastVideoSave"
-    },
-    description:
-      settings?.description ||
-      "FastVideoSave - popular open-source next.js and sanity blog template",
-    keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+    // title: {
+    //   default:
+    //     settings?.title ||
+    //     "FastVideoSave - Blog Template for Instagram Information",
+    //   template: "%s | FastVideoSave"
+    // },
+    // description:
+    //   settings?.description ||
+    //   "FastVideoSave - popular open-source next.js and sanity blog template",
+    // keywords: ["Next.js", "Sanity", "Tailwind CSS"],
+    // authors: [{ name: "Surjith" }],
     canonical: settings?.url,
     openGraph: {
       images: [

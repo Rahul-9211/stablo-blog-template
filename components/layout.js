@@ -20,13 +20,13 @@ export default function Layout(props) {
         <link rel="dns-prefetch" href="https://cdn.sanity.io//" />
       </Head>
       <NextSeo
-        title={props.title}
-        description={props.description}
+        title={props?.metaTitle}
+        description={props?.metaDesc}
         canonical={props.url}
         openGraph={{
           url: props.url,
-          title: props.title,
-          description: props.description,
+          title: props?.metaTitle,
+          description: props?.metaDesc,
           images: [
             {
               url: ogimage,
