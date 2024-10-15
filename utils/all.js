@@ -1,3 +1,8 @@
+
+
+import { clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
 export const cx = (...classNames) =>
   classNames.filter(Boolean).join(" ");
 
@@ -6,3 +11,7 @@ export const cx = (...classNames) =>
 export const myLoader = ({ src }) => {
   return src;
 };
+
+export function cn(...inputs) {
+  return twMerge(clsx(inputs))
+}

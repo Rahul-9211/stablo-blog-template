@@ -9,7 +9,7 @@ import { urlForImage } from "@/lib/sanity/image";
 import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
-
+import logoWeb from "../public/img/fastVideoSave.png"
 export default function Navbar(props) {
   const leftmenu = [
     {
@@ -28,8 +28,8 @@ export default function Navbar(props) {
 
   const rightmenu = [
     {
-      label: "Archive",
-      href: "/archive"
+      label: "Blogs",
+      href: "/blogs"
     },
     // {
     //   label: "Pro Version",
@@ -76,7 +76,7 @@ export default function Navbar(props) {
                   ))}
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
+                  <Link href="/" className="w-48 dark:hidden">
                     {props.logo ? (
                       <Image
                         {...urlForImage(props.logo)}
@@ -85,9 +85,17 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">
-                        FastVideoSave
-                      </span>
+                      // <span className="block text-center font-extrabold">
+                      //   FastVideoSave
+                      // </span>
+                      <Image
+                      src={logoWeb}
+                        alt="Logo"
+                        priority={true}
+                        sizes="(max-width: 640px) 100vw, 200px"
+                        width={800}
+                        height={200}
+                      />
                     )}
                   </Link>
                   <Link href="/" className="hidden w-28 dark:block">
@@ -100,7 +108,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center font-bold">
-                        FastVideoSaves
+                        FastVideoSave
                       </span>
                     )}
                   </Link>
