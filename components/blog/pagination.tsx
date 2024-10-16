@@ -24,14 +24,14 @@ export default function Pagination({
     params.set("page", (pageIndex + 1).toString());
     const query = params.toString();
 
-    router.push(`/archive?${query}`);
+    router.push(`/blogs?${query}`);
   };
 
   const handlePrevPage = () => {
     params.set("page", (pageIndex - 1).toString());
     const query = params.toString();
 
-    router.push(`/archive?${query}`);
+    router.push(`/blogs?${query}`);
   };
 
   return (
