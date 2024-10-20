@@ -3,22 +3,57 @@ import ThemeSwitch from "@/components/themeSwitch";
 import Image from "next/image";
 import { myLoader } from "@/utils/all";
 import VercelLogo from "../public/img/vercel.svg";
+import Link from "next/link";
 
 export default function Footer(props) {
   return (
-    <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
-      <div className="text-center text-sm">
-        Copyright © {new Date().getFullYear()} {props?.copyright}. All
-        rights reserved.
+    <Container className=" border-t border-gray-100 dark:border-gray-800">
+     
+   <div className="flex justify-between text-white font-semibold">
+   <div className="">
+        <ul>
+          <li>
+           <Link  href="/blogs">
+           Blogs
+           </Link>
+          
+          
+             
+             
+          </li>
+          <li>
+          <Link  href="/contact">
+           Contact
+           </Link>
+          </li>
+          <li>
+          <Link   href= "https://github.com/Rahul-9211">
+           Download
+           </Link>
+          </li>
+        </ul>
       </div>
-      <div className="mt-1 flex justify-center gap-1 text-center text-sm text-gray-500 dark:text-gray-600">
+      <div>
+        <ul>
+          <li>
+          <Link  href="/contact">
+           Privacy-policy
+           </Link>
+          </li>
+          <li>
+          <Link  href="/contact">
+           Terms & Conditions
+           </Link>
+          </li>
+        </ul>
+      </div>
+
+   </div>
+      {/* <div className="mt-1 flex justify-center gap-1 text-center text-sm text-gray-500 dark:text-gray-600">
         <span>
           {" "}
           Made by{" "}
-          {/*  // ** 🙏  Can I ask you a favor? 🙏 **
-            // Please do not remove the below link.
-           // It helps us to grow & continue our work. Thank you.
-          // OR Purchase PRO version for commercial license.  */}
+         
           <a
             href="https://github.com/Rahul-9211"
             rel="noopener"
@@ -36,26 +71,26 @@ export default function Footer(props) {
             Github
           </a>
         </span>
-      </div>
-      <div className="mt-2 flex items-center justify-between">
+      </div> */}
+      {/* <div className="mt-2 flex items-center justify-between">
         <div className="mt-5">
           <a
             href="https://fastVideoSave.com"
             target="_blank"
             rel="noopener"
             className="relative block w-44">
-            {/* <Image
+            <Image
               src={VercelLogo}
               alt="Powered by Vercel"
               unoptimized={true}
               width="150"
               height="25"
-            /> */}
+            />
             FastVideoSave
           </a>
         </div>
         <ThemeSwitch />
-      </div>
+      </div> */}
       {/* <Backlink /> */}
     </Container>
   );

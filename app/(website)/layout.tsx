@@ -57,9 +57,15 @@ export default async function Layout({ children, params }) {
      <Navbar {...settings} />
      </div>
 
-      <div>{children}</div>
+      <div className="bg-red-50 py-10">{children}</div>
 
+      <div className="bg-[#ffc7e9]">
       <Footer {...settings} />
+      </div>
+      <div className="text-center text-sm py-4">
+        Copyright © {new Date().getFullYear()} . All
+        rights reserved.
+      </div>
     </>
   );
 }

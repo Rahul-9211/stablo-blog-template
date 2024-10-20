@@ -39,7 +39,7 @@ const getCategoryIcon = (category) => {
           <p className="text-red-500 mt-2 text-sm font-semibold">{category}</p>
         </div>
       );
-    case "technology":
+    case "marketing":
       return (
         <div className="flex flex-col items-center">
           <div className="bg-green-100 p-4 rounded-full">
@@ -59,7 +59,7 @@ const getCategoryIcon = (category) => {
           <p className="text-green-500 mt-2 text-sm font-semibold">{category}</p>
         </div>
       );
-    case "applications":
+    case "how-to":
       return (
         <div className="flex flex-col items-center">
           <div className="bg-purple-100 p-4 rounded-full">
@@ -79,26 +79,36 @@ const getCategoryIcon = (category) => {
       );
     default:
       return (
-        <div className="flex flex-col items-center">
-          <div className="bg-gray-100 p-4 rounded-full">
-            <MagnifyingGlassIcon className="h-8 w-8 text-gray-500" />
-          </div>
-          <p className="text-gray-500 mt-2 text-sm font-semibold">{category}</p>
-        </div>
+        <></>
+        // <div className="flex flex-col items-center">
+        //   <div className="bg-gray-100 p-4 rounded-full">
+        //     <MagnifyingGlassIcon className="h-8 w-8 text-gray-500" />
+        //   </div>
+        //   <p className="text-gray-500 mt-2 text-sm font-semibold">{category}</p>
+        // </div>
       );
   }
 };
+function matchCatgory(category){
+  console.log("🚀 ~ matchCatgory ~ category:", category)
+  if(category === "social-media"|| category === "how-to" || category === "marketing" || category === "lawyer")  return true;
+  else false
+}
 
 export default function Category({ categories }) {
   console.log("🚀 ~ Category ~ categories:", categories)
   return (
     <div className="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
       {categories &&
-        categories.map((ele, key) => (
-          <div className="flex justify-center cursor-pointer" key={key}>
+        categories.map((ele, key) => {
+          if(matchCatgory(ele.category)){
+            return <div className="flex justify-center cursor-pointer" key={key}>
             {getCategoryIcon(ele.category)}
           </div>
-        ))}
+           
+          }
+         
+})}
     </div>
   );
 }
