@@ -11,32 +11,193 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
 import logoWeb from "../public/img/fastVideoSave.png"
 export default function Navbar(props) {
+
+
+
   const leftmenu = [
     {
-      label: "Home",
-      href: "/"
+      label: "Marketing",
+      href: "#",
+      children: [
+        {
+          label: "How to Sell Products Without a Website",
+          href: "/blog/how-to-sell-on-instagram-without-a-website"
+        },
+        {
+          label: "Is Investing in Online Ads Profitable?",
+          href: "/blog/is-investing-in-instagram-ads-worth-it"
+        },
+        {
+          label: "Getting More Views on Short Videos",
+          href: "/blog/how-to-get-more-views-on-your-instagram-reels"
+        },
+        {
+          label: "Unlocking Features for Longer Video Clips",
+          href: "/blog/how-to-enable-60-second-reels-on-instagram"
+        },
+        {
+          label: "2024 Trends for Short Video Content",
+          href: "/blog/instagram-trending-reels-2024-top-trends-and-tips"
+        }
+      ]
     },
-    // {
-    //   label: "About",
-    //   href: "/about"
-    // },
     {
-      label: "Contact",
-      href: "/contact"
+      label: "Growth",
+      href: "#",
+      children: [
+        {
+          label: "Updates on Short-Form Video Platforms",
+          href: "/blog/youtube-shorts-new-update-180-seconds"
+        },
+        {
+          label: "Discovering and Searching Trending Videos in 2024",
+          href: "/blog/instagram-reel-finder-search-discover-reels-2024"
+        },
+        {
+          label: "Earning Money with Digital Marketing Techniques",
+          href: "/blog/how-to-make-money-through-digital-marketing"
+        },
+        {
+          label: "Finding Niche Influencers for Your Brand",
+          href: "/blog/how-to-find-micro-influencers-on-instagram"
+        },
+        {
+          label: "Advanced Online Protections for Young Users",
+          href: "/blog/instagram-implements-advanced-protections-for-teen-users"
+        }
+      ]
+    },
+    {
+      label: "Legal",
+      href: "#",
+      children: [
+        {
+          label: "Brain Injury Legal Assistance in Dallas",
+          href: "/blog/dallas-brain-injury-lawyer"
+        },
+        {
+          label: "Attorneys for Oilfield Accidents in Houston",
+          href: "/blog/houston-oilfield-accident-attorney"
+        },
+        {
+          label: "Legal Experts for 18-Wheeler Accidents in Midland",
+          href: "/blog/18-wheeler-accident-lawyer-midland"
+        },
+        {
+          label: "Best Legal Advisors for Contractors",
+          href: "/blog/best-contractor-lawyer",
+        }
+      ]
+    }
+    , {
+      label: "How to",
+      href: "#",
+      children: [
+        {
+          label: "How to Use a Mastercard Gift Card for Online Shopping",
+          href: "/blog/how-to-use-a-mastercard-gift-card"
+        },
+        {
+          label: "How to Find Insurance Policy Limits: A Comprehensive Guide",
+          href: "/blog/how-to-find-insurance-policy-limits"
+        },
+        {
+          label: "How to Become a Librarian: Requirements, Steps, and Career Path ",
+          href: "/blog/how-to-become-a-librarian"
+        },
+        {
+          label: "Can You Have Insurance on an Unregistered Car: What You Need to Know",
+          href: "/blog/can-you-have-insurance-on-an-unregistered-car"
+        }
+      ]
     }
   ];
+  
+  // const leftmenu = [
+  //   {
+  //     label: "Marketing",
+  //     href: "/",
+  //     children : [
+  //       {
+  //         label: "How to Sell Products Without a Website",
+  //         href: "/services/web-development"
+  //       },
+  //     ]
+  //   },
+  //   {
+  //     label: "Services",
+  //     href: "#",
+  //     children: [
+  //       {
+  //         label: "Web Development",
+  //         href: "/services/web-development"
+  //       },
+  //       {
+  //         label: "Mobile Development",
+  //         href: "/services/mobile-development"
+  //       },
+  //       {
+  //         label: "SEO",
+  //         href: "/services/seo"
+  //       },
+  //       {
+  //         label: "UI/UX Design",
+  //         href: "/services/ui-ux-design" // New link added here
+  //       },
+  //       {
+  //         label: "Web Development",
+  //         href: "/services/web-development"
+  //       },
+  //       {
+  //         label: "Mobile Development",
+  //         href: "/services/mobile-development"
+  //       },
+  //       {
+  //         label: "SEO",
+  //         href: "/services/seo"
+  //       },
+  //       {
+  //         label: "UI/UX Design",
+  //         href: "/services/ui-ux-design" // New link added here
+  //       },
+  //       {
+  //         label: "Web Development",
+  //         href: "/services/web-development"
+  //       },
+  //       {
+  //         label: "Mobile Development",
+  //         href: "/services/mobile-development"
+  //       },
+  //       {
+  //         label: "SEO",
+  //         href: "/services/seo"
+  //       },
+  //       {
+  //         label: "UI/UX Design",
+  //         href: "/services/ui-ux-design" // New link added here
+  //       }
+
+  //     ]
+  //   },
+  //   {
+  //     label: "Contact",
+  //     href: "/contact"
+  //   }
+  // ];
+  
+  
 
   const rightmenu = [
     {
       label: "Blogs",
       href: "/blogs"
     },
-    // {
-    //   label: "Pro Version",
-    //   href: "https://stablo-pro.web3templates.com/",
-    //   external: true,
-    //   badge: "new"
-    // },
+    {
+      label: "Pro Version",
+      href: "https://stablo-pro.web3templates.com/",
+      external: true,
+      badge: "new"
+    },
     {
       label: "Download",
       href: "https://github.com/Rahul-9211",
@@ -44,7 +205,7 @@ export default function Navbar(props) {
     }
   ];
 
-  const mobilemenu = [...leftmenu, ...rightmenu];
+  const mobilemenu = [...leftmenu];
 
   return (
     <Container>
@@ -53,29 +214,8 @@ export default function Navbar(props) {
           {({ open }) => (
             <>
               <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
-                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
-                  {leftmenu.map((item, index) => (
-                    <Fragment key={`${item.label}${index}`}>
-                      {item.children && item.children.length > 0 ? (
-                        <DropdownMenu
-                          menu={item}
-                          key={`${item.label}${index}`}
-                          items={item.children}
-                        />
-                      ) : (
-                        <Link
-                          href={item.href}
-                          key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
-                          target={item.external ? "_blank" : ""}
-                          rel={item.external ? "noopener" : ""}>
-                          {item.label}
-                        </Link>
-                      )}
-                    </Fragment>
-                  ))}
-                </div>
-                <div className="flex w-full items-center justify-between md:w-auto">
+
+              <div className="flex w-full items-center justify-between md:w-auto">
                   <Link href="/" className="w-48 dark:hidden">
                     {props.logo ? (
                       <Image
@@ -136,7 +276,30 @@ export default function Navbar(props) {
                   </Disclosure.Button>
                 </div>
 
-                <div className="order-2 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row">
+                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
+                  {leftmenu.map((item, index) => (
+                    <Fragment key={`${item.label}${index}`}>
+                      {item.children && item.children.length > 0 ? (
+                        <DropdownMenu
+                          menu={item}
+                          key={`${item.label}${index}`}
+                          items={item.children}
+                        />
+                      ) : (
+                        <Link
+                          href={item.href}
+                          key={`${item.label}${index}`}
+                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          target={item.external ? "_blank" : ""}
+                          rel={item.external ? "noopener" : ""}>
+                          {item.label}
+                        </Link>
+                      )}
+                    </Fragment>
+                  ))}
+                </div>
+               
+                {/* <div className="order-2 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row">
                   {rightmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
                       {item.children && item.children.length > 0 ? (
@@ -162,7 +325,7 @@ export default function Navbar(props) {
                       )}
                     </Fragment>
                   ))}
-                </div>
+                </div> */}
               </div>
               <Disclosure.Panel>
                 <div className="order-2 -ml-4 mt-4 flex w-full flex-col items-center justify-start md:hidden">
@@ -197,6 +360,8 @@ export default function Navbar(props) {
   );
 }
 
+
+
 const DropdownMenu = ({ menu, items, mobile }) => {
   return (
     <Menu
@@ -229,18 +394,18 @@ const DropdownMenu = ({ menu, items, mobile }) => {
                 !mobile && "bg-white shadow-lg  dark:bg-gray-800"
               )}>
               <div className={cx(!mobile && "py-3")}>
-                {items.map((item, index) => (
+                {menu.children.map((item, index) => (
                   <Menu.Item as="div" key={`${item.title}${index}`}>
                     {({ active }) => (
                       <Link
-                        href={item?.path ? item.path : "#"}
+                        href={item?.href ? item.href : "#"}
                         className={cx(
                           "flex items-center space-x-2 px-5 py-2 text-sm lg:space-x-4",
                           active
                             ? "text-blue-500"
                             : "text-gray-700 hover:text-blue-500 focus:text-blue-500 dark:text-gray-300"
                         )}>
-                        <span> {item.title}</span>
+                        <span> {item.label}</span>
                       </Link>
                     )}
                   </Menu.Item>
@@ -253,3 +418,42 @@ const DropdownMenu = ({ menu, items, mobile }) => {
     </Menu>
   );
 };
+
+
+// const DropdownMenu = ({ menu, items, mobile }) => {
+//   return (
+//     <div className={cx("relative group text-left", mobile && "w-full")}>
+//       {/* Menu Label with Hover */}
+//       <div
+//         className={cx(
+//           "flex items-center gap-x-1 rounded-md px-5 py-2 text-sm font-medium  transition-all dark:hover:bg-gray-800",
+//           "text-gray-600 dark:text-gray-400 hover:text-blue-500",
+//           mobile ? "w-full px-4 py-2 " : "inline-block px-4 py-2"
+//         )}
+//       >
+//         <span>{menu.label}</span>
+//         <ChevronDownIcon className="mt-0.5 h-4 w-4" />
+//       </div>
+
+//       {/* Dropdown Menu */}
+//       <div
+//         className={cx(
+//           "absolute left-0 z-20 mt-2 hidden w-48 rounded-md bg-white shadow-lg group-hover:block",
+//           "dark:bg-gray-800"
+//         )}
+//       >
+//         <div className="py-1">
+//           {items.map((subItem, index) => (
+//             <Link
+//               key={index}
+//               href={subItem.href}
+//               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-900"
+//             >
+//               {subItem.label}
+//             </Link>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
