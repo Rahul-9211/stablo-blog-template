@@ -1,7 +1,7 @@
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
 
-import { getPaginatedPosts } from "@/lib/sanity/client";
+import { getAllCategories, getAllPosts, getPaginatedPosts, getPostsByCategory } from "@/lib/sanity/client";
 
 export default async function Post({ searchParams }) {
   // Fetch the current page from the query parameters, defaulting to 1 if it doesn't exist
@@ -16,8 +16,14 @@ export default async function Post({ searchParams }) {
     pageIndex: (pageIndex - 1) * POSTS_PER_PAGE,
     limit: pageIndex * POSTS_PER_PAGE
   };
+  // console.log("🚀 ~ Post ~ params:", params)
 
-  const posts = await getPaginatedPosts(params);
+  const posts = await getPostsByCategory("marketing");
+  // const posts = Allposts.filter((post)=>{
+  //   console.log("Found", post.categories[0].title)
+  //   return post.categories[0].title === "Marketing"
+  // })
+  // console.log("🚀 ~ Post ~ posts:", posts)
 
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
@@ -34,12 +40,11 @@ export default async function Post({ searchParams }) {
       )}
       <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3">
         {posts.map(post => (
-          <PostList key={post._id} post={post} aspect="square" category="blog"/>
+          <PostList key={post._id} post={post} aspect="square" category="marketing" />
         ))}
       </div>
 
       <Pagination
-      category="blogs"
         pageIndex={pageIndex}
         isFirstPage={isFirstPage}
         isLastPage={isLastPage}

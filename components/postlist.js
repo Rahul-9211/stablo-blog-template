@@ -7,6 +7,7 @@ import { PhotoIcon } from "@heroicons/react/24/outline";
 import CategoryLabel from "@/components/blog/category";
 
 export default function PostList({
+  category, 
   post,
   aspect,
   minimal,
@@ -41,8 +42,8 @@ export default function PostList({
                 ? "aspect-[5/4]"
                 : "aspect-square"
             )}
-            href={`/blog/${pathPrefix ? `${pathPrefix}/` : ""}${
-              post.slug.current
+            href={`/${category}/${pathPrefix ? `${pathPrefix}/` : ""}${
+              post.slug?.current
             }`}>
             {imageProps ? (
               <Image
@@ -84,7 +85,7 @@ export default function PostList({
                 "mt-2    dark:text-white"
               )}>
               <Link
-                href={`/blog/${pathPrefix ? `${pathPrefix}/` : ""}${
+                href={`/${category}/${pathPrefix ? `${pathPrefix}/` : ""}${
                   post.slug.current
                 }`}>
                 <span
@@ -104,7 +105,7 @@ export default function PostList({
               {post.excerpt && (
                 <p className="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400">
                   <Link
-                    href={`/blog/${
+                    href={`/${category}/${
                       pathPrefix ? `${pathPrefix}/` : ""
                     }${post.slug.current}`}>
                     {post.excerpt}

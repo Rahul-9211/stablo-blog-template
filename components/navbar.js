@@ -20,23 +20,23 @@ export default function Navbar(props) {
       href: "#",
       children: [
         {
-          label: "How to Sell Products Without a Website",
+          label: "Ultimate Guide: How to Sell on Instagram Without a Website",
           href: "/blog/how-to-sell-on-instagram-without-a-website"
         },
         {
-          label: "Is Investing in Online Ads Profitable?",
+          label: "Is Investing in Instagram Ads Worth It in 2024?",
           href: "/blog/is-investing-in-instagram-ads-worth-it"
         },
         {
-          label: "Getting More Views on Short Videos",
+          label: "Maximizing Instagram Reels Views: Top Hacks for Success",
           href: "/blog/how-to-get-more-views-on-your-instagram-reels"
         },
         {
-          label: "Unlocking Features for Longer Video Clips",
+          label: "How to enable 60 second Reels on Instagram",
           href: "/blog/how-to-enable-60-second-reels-on-instagram"
         },
         {
-          label: "2024 Trends for Short Video Content",
+          label: "Top 10 Instagram Trending Reels to Boost Your Engagement in 2024",
           href: "/blog/instagram-trending-reels-2024-top-trends-and-tips"
         }
       ]
@@ -46,23 +46,23 @@ export default function Navbar(props) {
       href: "#",
       children: [
         {
-          label: "Updates on Short-Form Video Platforms",
+          label: "Breaking News: Latest Youtube Shorts Update Allows 180-Second Videos!",
           href: "/blog/youtube-shorts-new-update-180-seconds"
         },
         {
-          label: "Discovering and Searching Trending Videos in 2024",
+          label: "Instagram Reel Finder: Search and Discover Trending Reels (2024 - 2025)",
           href: "/blog/instagram-reel-finder-search-discover-reels-2024"
         },
         {
-          label: "Earning Money with Digital Marketing Techniques",
+          label: "Discover the Secrets of Making Money Through Digital Marketing",
           href: "/blog/how-to-make-money-through-digital-marketing"
         },
         {
-          label: "Finding Niche Influencers for Your Brand",
+          label: "How to Find Micro Influencers on Instagram: 7 Expert Strategies",
           href: "/blog/how-to-find-micro-influencers-on-instagram"
         },
         {
-          label: "Advanced Online Protections for Young Users",
+          label: "Instagram Implements Advanced Protections for Teen Users – Stay Informed!",
           href: "/blog/instagram-implements-advanced-protections-for-teen-users"
         }
       ]
@@ -72,19 +72,19 @@ export default function Navbar(props) {
       href: "#",
       children: [
         {
-          label: "Brain Injury Legal Assistance in Dallas",
+          label: "Dallas Brain Injury Lawyer: Expert Guidance for Traumatic Brain Injury Victims",
           href: "/blog/dallas-brain-injury-lawyer"
         },
         {
-          label: "Attorneys for Oilfield Accidents in Houston",
+          label: "Houston Oilfield Accident Attorney for Texas Injury Cases : Expert Legal Guidance",
           href: "/blog/houston-oilfield-accident-attorney"
         },
         {
-          label: "Legal Experts for 18-Wheeler Accidents in Midland",
+          label: "Top-Rated Midland 18 Wheeler Accident Lawyer for Your Legal Needs",
           href: "/blog/18-wheeler-accident-lawyer-midland"
         },
         {
-          label: "Best Legal Advisors for Contractors",
+          label: "Essential Guide: Finding the Best Contractor Lawyer for Your Construction Dispute",
           href: "/blog/best-contractor-lawyer",
         }
       ]

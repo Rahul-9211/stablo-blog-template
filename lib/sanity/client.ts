@@ -106,7 +106,7 @@ export async function getAllCategories() {
   return [];
 }
 
-export async function getPostsByCategory(slug) {
+export async function getPostsByCategory(slug : any) {
   if (client) {
     return (await client.fetch(postsbycatquery, { slug })) || {};
   }

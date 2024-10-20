@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 export default function Pagination({
+  category, 
   pageIndex,
   isFirstPage,
   isLastPage
@@ -24,14 +25,14 @@ export default function Pagination({
     params.set("page", (pageIndex + 1).toString());
     const query = params.toString();
 
-    router.push(`/blogs?${query}`);
+    router.push(`/${category}?${query}`);
   };
 
   const handlePrevPage = () => {
     params.set("page", (pageIndex - 1).toString());
     const query = params.toString();
 
-    router.push(`/blogs?${query}`);
+    router.push(`/${category}?${query}`);
   };
 
   return (
