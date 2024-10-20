@@ -1,9 +1,11 @@
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const getCategoryIcon = (category) => {
   switch (category.toLowerCase()) {
-    case "social-media":
+    case "growth":
       return (
+        <Link href="growth">
         <div className="flex flex-col items-center">
           <div className="bg-blue-100 p-4 rounded-full">
           <svg
@@ -19,10 +21,11 @@ const getCategoryIcon = (category) => {
 
           </div>
           <p className="text-blue-500 mt-2 text-sm font-semibold">{category}</p>
-        </div>
+        </div> </Link>
       );
-    case "lawyer":
+    case "legal":
       return (
+        <Link href="legal">
         <div className="flex flex-col items-center">
           <div className="bg-red-100 p-4 rounded-full">
             <svg
@@ -37,10 +40,11 @@ const getCategoryIcon = (category) => {
             </svg>
           </div>
           <p className="text-red-500 mt-2 text-sm font-semibold">{category}</p>
-        </div>
+        </div> </Link>
       );
     case "marketing":
       return (
+        <Link href="marketing">
         <div className="flex flex-col items-center">
           <div className="bg-green-100 p-4 rounded-full">
             <svg
@@ -57,11 +61,13 @@ const getCategoryIcon = (category) => {
             </svg>
           </div>
           <p className="text-green-500 mt-2 text-sm font-semibold">{category}</p>
-        </div>
+        </div> </Link>
       );
     case "how-to":
       return (
+        <Link href="how-to">
         <div className="flex flex-col items-center">
+        
           <div className="bg-purple-100 p-4 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +82,7 @@ const getCategoryIcon = (category) => {
           </div>
           <p className="text-purple-500 mt-2 text-sm font-semibold">{category}</p>
         </div>
+        </Link>
       );
     default:
       return (
@@ -90,13 +97,11 @@ const getCategoryIcon = (category) => {
   }
 };
 function matchCatgory(category){
-  console.log("🚀 ~ matchCatgory ~ category:", category)
-  if(category === "social-media"|| category === "how-to" || category === "marketing" || category === "lawyer")  return true;
+  if(category === "growth"|| category === "how-to" || category === "marketing" || category === "legal")  return true;
   else false
 }
 
 export default function Category({ categories }) {
-  console.log("🚀 ~ Category ~ categories:", categories)
   return (
     <div className="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
       {categories &&
@@ -105,9 +110,7 @@ export default function Category({ categories }) {
             return <div className="flex justify-center cursor-pointer" key={key}>
             {getCategoryIcon(ele.category)}
           </div>
-           
           }
-         
 })}
     </div>
   );

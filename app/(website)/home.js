@@ -27,7 +27,7 @@ export default function Post({ posts }) {
           </div> */}
           <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 ">
             {posts.slice(1, 14).map(post => (
-              <PostList key={post._id} post={post} aspect="square" />
+              <PostList key={post._id} post={post} aspect="square" category="blog"/>
             ))}
           </div>
           <div className="mt-10 flex justify-center">

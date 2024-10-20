@@ -26,22 +26,22 @@ export default function Footer(props) {
            Contact
            </Link>
           </li>
-          <li>
+          {/* <li>
           <Link   href= "https://github.com/Rahul-9211">
            Download
            </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div>
         <ul>
           <li>
-          <Link  href="/contact">
+          <Link  href="/privacy-policy">
            Privacy-policy
            </Link>
           </li>
           <li>
-          <Link  href="/contact">
+          <Link  href="/terms-and-condition">
            Terms & Conditions
            </Link>
           </li>
