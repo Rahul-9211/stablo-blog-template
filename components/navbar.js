@@ -112,6 +112,10 @@ export default function Navbar(props) {
         {
           label: "Can You Have Insurance on an Unregistered Car: What You Need to Know",
           href: "/blog/can-you-have-insurance-on-an-unregistered-car"
+        },
+        {
+          label: "Should I Use Insurance to Replace My Windshield? A Practical Guide",
+          href: "/blog/should-i-use-insurance-to-replace-my-windshield"
         }
       ]
     },
