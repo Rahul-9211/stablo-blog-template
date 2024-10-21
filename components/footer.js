@@ -9,8 +9,8 @@ export default function Footer(props) {
   return (
     <Container className=" border-t border-gray-100 dark:border-gray-800">
      
-   <div className="flex justify-between text-white font-semibold">
-   <div className="">
+   <div className="flex justify-between text-white font-semibold ">
+   {/* <div className="">
         <ul>
           <li>
            <Link  href="/blogs">
@@ -21,32 +21,35 @@ export default function Footer(props) {
              
              
           </li>
-          {/* <li>
+          <li>
           <Link  href="/contact">
            Contact
            </Link>
-          </li> */}
-          {/* <li>
+          </li>
+          <li>
           <Link   href= "https://github.com/Rahul-9211">
            Download
            </Link>
-          </li> */}
+          </li>
         </ul>
-      </div>
-      <div>
-        <ul>
-          <li>
+      </div> */}
+        <ul className="flex justify-center items-center w-full">
+        <li className="px-4">
+          <Link  href="/contact">
+          Contact
+           </Link>
+          </li>
+          <li className="px-4">
           <Link  href="/privacy-policy">
            Privacy-policy
            </Link>
           </li>
-          <li>
+          <li className="px-4">
           <Link  href="/terms-and-condition">
            Terms & Conditions
            </Link>
           </li>
         </ul>
-      </div>
 
    </div>
       {/* <div className="mt-1 flex justify-center gap-1 text-center text-sm text-gray-500 dark:text-gray-600">

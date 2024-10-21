@@ -38,6 +38,10 @@ export default function Navbar(props) {
         {
           label: "Top 10 Instagram Trending Reels to Boost Your Engagement in 2024",
           href: "/blog/instagram-trending-reels-2024-top-trends-and-tips"
+        },
+        {
+          label: "Instagram Launches New Profile Cards: A Game-Changer for Personal and Business Branding",
+          href: "/blog/instagram-new-profile-cards"
         }
       ]
     },
