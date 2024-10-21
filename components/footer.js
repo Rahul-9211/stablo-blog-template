@@ -21,11 +21,11 @@ export default function Footer(props) {
              
              
           </li>
-          <li>
+          {/* <li>
           <Link  href="/contact">
            Contact
            </Link>
-          </li>
+          </li> */}
           {/* <li>
           <Link   href= "https://github.com/Rahul-9211">
            Download

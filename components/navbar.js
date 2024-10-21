@@ -110,6 +110,16 @@ export default function Navbar(props) {
           href: "/blog/can-you-have-insurance-on-an-unregistered-car"
         }
       ]
+    },
+    {
+
+      label: "Contact",
+      href: "/contact",
+    },
+    {
+
+      label: "About",
+      href: "/about",
     }
   ];
   
@@ -371,7 +381,7 @@ const DropdownMenu = ({ menu, items, mobile }) => {
         <>
           <Menu.Button
             className={cx(
-              "flex items-center gap-x-1 rounded-md px-5 py-2 text-sm font-medium  outline-none transition-all focus:outline-none focus-visible:text-indigo-500 focus-visible:ring-1 dark:focus-visible:bg-gray-800",
+              "flex items-center gap-x-1 rounded-md px-3 py-2 text-sm font-medium  outline-none transition-all focus:outline-none focus-visible:text-indigo-500 focus-visible:ring-1 dark:focus-visible:bg-gray-800",
               open
                 ? "text-blue-500 hover:text-blue-500"
                 : " text-gray-600 dark:text-gray-400 ",

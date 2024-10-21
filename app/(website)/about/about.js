@@ -13,7 +13,7 @@ export default function About({ authors, settings }) {
         <p className="text-lg">We are a small passionate team.</p>
       </div>
 
-      <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
+      {/* <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
         {authors.slice(0, 3).map(author => {
           const imageProps = urlForImage(author?.image) || null;
           return (
@@ -34,23 +34,25 @@ export default function About({ authors, settings }) {
             </div>
           );
         })}
-      </div>
+      </div> */}
 
-      <div className="prose mx-auto mt-14 text-center dark:prose-invert">
-        <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
-        </p>
-        <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
-        </p>
-        <p>
-          <Link href="/contact">Get in touch</Link>
-        </p>
+      <div className="prose mx-auto mt-14 text-left dark:prose-invert">
+      <p>Your trusted source for educational and informational content! Based in Delhi, India, our blog is dedicated to providing insightful articles and resources that empower readers with knowledge in various fields.</p>
+
+    <p>Whether you’re seeking the latest tech trends, social media tips, or digital tools insights, our platform is designed to be your go-to destination.</p>
+
+    <h2>Our Mission</h2>
+    <p>At Fast Video Save, we are passionate about sharing information that adds value to your everyday life. Our content is carefully curated and written with the goal of making complex topics easy to understand. We cover a wide range of subjects—from the latest updates in the digital world to expert advice on improving your online presence.</p>
+
+    <h2>Why Choose Us</h2>
+    <p>We pride ourselves on delivering content that is informative, up-to-date, and relevant. With the help of Google Analytics, we continuously monitor and improve the user experience to make sure that our content reaches and resonates with our audience.</p>
+
+    <h2>Our Goal</h2>
+    <p>Our mission is simple: to educate, inform, and inspire. We believe that learning should be accessible to everyone, and through our blog, we aim to make it happen.</p>
+
+    <h2>Contact Us</h2>
+    <p>Thank you for visiting Fast Video Save. We hope you find our articles helpful and enlightening. Should you have any suggestions or inquiries, feel free to reach out to us at <a href="mailto:fastvideosave@gmail.com">fastvideosave@gmail.com</a>. We’re always here to listen!</p>
+
       </div>
     </Container>
   );
