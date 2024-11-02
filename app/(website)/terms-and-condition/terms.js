@@ -42,7 +42,7 @@ export default function Terms({  settings }) {
 
     <p>You represent that you are over the age of 18. The Company does not permit individuals under 18 to use the Service.</p>
 
-    <p>Your access to and use of the Service is also conditioned on your acceptance of and compliance with the Company's Privacy Policy. Our Privacy Policy describes our policies on the collection, use, and disclosure of your information. Please read our Privacy Policy carefully before using our Service.</p>
+    <p>Your access to and use of the Service is also conditioned on your acceptance of and compliance with the Company&apos;s Privacy Policy. Our Privacy Policy describes our policies on the collection, use, and disclosure of your information. Please read our Privacy Policy carefully before using our Service.</p>
 
     <h2>Links to Other Websites</h2>
     <p>Our Service may contain links to third-party websites or services that are not owned or controlled by the Company.</p>
@@ -57,7 +57,7 @@ export default function Terms({  settings }) {
     <p>Upon termination, Your right to use the Service will cease immediately.</p>
 
     <h2>Limitation of Liability</h2>
-    <p>Notwithstanding any damages that You might incur, the Company's entire liability and any of its suppliers' liability under any provision of these Terms shall be limited to the amount You actually paid through the Service or ₹5000 INR if You haven't purchased anything through the Service.</p>
+    <p>Notwithstanding any damages that You might incur, the Company&apos;s entire liability and any of its suppliers&apos; liability under any provision of these Terms shall be limited to the amount You actually paid through the Service or ₹5000 INR if You haven&apos;t purchased anything through the Service.</p>
 
     <p>To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages (including, but not limited to, loss of profits, loss of data, business interruption, personal injury, or loss of privacy) arising out of or related to the use of or inability to use the Service or third-party software/hardware used with the Service.</p>
 
@@ -71,7 +71,7 @@ export default function Terms({  settings }) {
     <p>If You have any concern or dispute regarding the Service, You agree to first try to resolve the matter informally by contacting Us at <a href="mailto:fastvideosave@gmail.com">fastvideosave@gmail.com</a>.</p>
 
     <h2>Changes to These Terms and Conditions</h2>
-    <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, We will make reasonable efforts to provide at least 30 days' notice before any new terms take effect. What constitutes a material change will be determined at Our sole discretion.</p>
+    <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, We will make reasonable efforts to provide at least 30 days&apos; notice before any new terms take effect. What constitutes a material change will be determined at Our sole discretion.</p>
 
     <p>By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the Service.</p>
 
