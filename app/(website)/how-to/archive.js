@@ -19,6 +19,7 @@ export default async function Post({ searchParams }) {
   // console.log("🚀 ~ Post ~ params:", params)
 
   const posts = await getPostsByCategory("how-to");
+  console.log("🚀 ~ Post ~ posts:", posts.length)
   // const posts = Allposts.filter((post)=>{
   //   console.log("Found", post.categories[0].title)
   //   return post.categories[0].title === "Marketing"
