@@ -3,32 +3,14 @@ import Pagination from "@/components/blog/pagination";
 
 import { getAllCategories, getAllPosts, getPaginatedPosts, getPostsByCategory } from "@/lib/sanity/client";
 
-export default async function Post({ searchParams }) {
+export default async function Post({ searchParams, posts }) {
   // Fetch the current page from the query parameters, defaulting to 1 if it doesn't exist
   const page = searchParams.page;
   const pageIndex = parseInt(page, 10) || 1;
-
-  // Set the number of posts to be displayed per page
   const POSTS_PER_PAGE = 12;
-
-  // Define the parameters for fetching posts based on the current page
-  const params = {
-    pageIndex: (pageIndex - 1) * POSTS_PER_PAGE,
-    limit: pageIndex * POSTS_PER_PAGE
-  };
-  // console.log("🚀 ~ Post ~ params:", params)
-
-  const posts = await getPostsByCategory("how-to");
   console.log("🚀 ~ Post ~ posts:", posts.length)
-  // const posts = Allposts.filter((post)=>{
-  //   console.log("Found", post.categories[0].title)
-  //   return post.categories[0].title === "Marketing"
-  // })
-  // console.log("🚀 ~ Post ~ posts:", posts)
-
-  // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
-  const isLastPage = posts.length < POSTS_PER_PAGE;
+  const isLastPage = true;
 
   return (
     <>
@@ -46,7 +28,7 @@ export default async function Post({ searchParams }) {
       </div>
 
       <Pagination
-      category={"legal"}
+      category={"how-to"}
         pageIndex={pageIndex}
         isFirstPage={isFirstPage}
         isLastPage={isLastPage}
