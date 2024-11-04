@@ -3,13 +3,14 @@ import Container from "@/components/container";
 import Archive from "./archive";
 import Loading from "@/components/loading";
 import Category from "@/components/ui/category";
-import { getAllCategories } from "@/lib/sanity/client";
+import { getAllCategories, getPostsByCategory } from "@/lib/sanity/client";
 
 export const dynamic = "force-dynamic";
 
 export const runtime = "edge";
 
 export default async function ArchivePage({ searchParams }) {
+  const posts = await getPostsByCategory("how-to");
 
   const categories = await getAllCategories();
   return (
@@ -28,7 +29,7 @@ export default async function ArchivePage({ searchParams }) {
         <Suspense
           key={searchParams.page || "1"}
           fallback={<Loading />}>
-          <Archive searchParams={searchParams} />
+          <Archive searchParams={searchParams} posts={posts}/>
         </Suspense>
       </Container>
     </>

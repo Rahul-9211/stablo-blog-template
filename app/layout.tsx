@@ -23,6 +23,9 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable)}>
+        <head>
+        <meta name="google-site-verification" content="Vu1FnigGDboNlIeIP7b5IlNcXtZa5Nu4sdOWW7iNJnY" />
+        </head>
        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CT8789G4S4"></script>
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3371051243633561"
      crossOrigin="anonymous"></script>
